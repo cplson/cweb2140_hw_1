@@ -2,10 +2,10 @@
 version: '3.3'
 services:
   homeworkOne:
-    image: jacjamg/homeworkOne:latest
-    container_name: homeworkOne
+    image: jacjamg/homework_one:latest
+    container_name: homework_one
     user: root
     ports:
       - '80:80'
     volumes:
-      - /home/appserver/homeworkOne
+      - /home/appserver/homework_one
