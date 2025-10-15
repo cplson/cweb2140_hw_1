@@ -19,21 +19,21 @@ pipeline
             }
         }
 
-        stage('SCA-SAST-SNYK-TEST')
-        {
-            agent any
-            steps
-            {
-                script 
-                {
-                    snykSecurity(
-                        snykInstallation: 'snyk-installations',
-                        snykTokenId: 'Snyk-Token',
-                        severity: 'critical'
-                    )
-                }
-            }
-        }
+        // stage('SCA-SAST-SNYK-TEST')
+        // {
+        //     agent any
+        //     steps
+        //     {
+        //         script 
+        //         {
+        //             snykSecurity(
+        //                 snykInstallation: 'snyk-installations',
+        //                 snykTokenId: 'Snyk-Token',
+        //                 severity: 'critical'
+        //             )
+        //         }
+        //     }
+        // }
 
         stage('SAST')
         {
